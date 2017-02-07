@@ -11,13 +11,26 @@ var parseJSON = function(json) {
     }
   }
   return json;*/
-  if (typeof json !== 'string') {
+  /*if (typeof json !== 'string') {
     return 'SyntaxError';
-  }
+  }*/
   for (var i = 0; i < json.length; i++) {
     if (json[i] === '[') {
-      return [];
+      var start = i;
     }
+    //[1,2,["hi"]];
+      /*for (var j = i; json[i] !== ']'; j++) {
+        parseJSON(j);
+      }*/
+    //return [];
   }
+  
+
+
+
+
+
+
+
   //return json;
 };
